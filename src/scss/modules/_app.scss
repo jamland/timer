@@ -1,0 +1,88 @@
+body#timer-app {
+  font-size: 20vm;
+  cursor: default;
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .viewport {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .icon-btn,
+    a.icon-btn {
+      background-size: 100% !important;
+      background-repeat: no-repeat !important;
+      background-position-y: center !important;
+      text-decoration: none;
+    }
+    
+    > header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      padding: 5% 10%;
+
+      span {
+        font-size: 2.5em;
+      }
+
+
+      .nav-cal {
+        background: url(../img/nav-carret.svg);
+        width: 3em;
+        height: 3em;
+        margin-left: 4em;
+        opacity: .3;
+      }
+
+      .nav-ham {
+        background: url(../img/nav-hamburger.svg);
+        width: 3em;
+        height: 3em;
+        margin-left: auto;
+        opacity: .3;
+      }
+    }
+
+    > .counter {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5% 10% 0;
+      margin-top: auto;
+      flex-direction: column;
+      justify-content: space-around;
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child {
+          margin-bottom: 2em;
+        }
+
+        > div {
+          background: url(../img/tomato-sm-gray.png);
+          width: 15vw;
+          height: 15vw;
+          opacity: 1;
+          background-size: 100%;
+          background-repeat: no-repeat;
+
+          &.done {
+            background: url(../img/tomato-sm.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+        }  
+      }
+    }
+  }
+}

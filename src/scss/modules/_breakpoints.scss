@@ -1,0 +1,49 @@
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+// mobile phones ended at this point for dec 2015
+// and screen set like 480x740
+@media only screen and (min-width:720px) {
+  body#timer-app {
+    .viewport {
+      width: 480px;
+      max-height: 100vh;
+      height: 740px;
+      border-bottom-left-radius: 50px 20px;
+      border-bottom-right-radius: 50px 20px;
+      overflow: hidden;
+
+      > .counter {
+        > div {
+          > div {
+            width: 6em;
+            height: 6em;
+          }
+        }
+      }
+
+      .tomato .tomato-content .t-controls {
+        button {
+          width: 1.5em;
+          height: 1.5em;
+        }
+      } 
+    }
+
+  } 
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+}

@@ -1,0 +1,76 @@
+body#timer-app .viewport .tomato {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 60%;
+  margin-top: auto;
+
+  .tomato-header {
+    flex: 0;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .tomato-content {
+    flex: 1;
+    background: $tomatoRed;
+    font-size: 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .t-slider {
+      border-bottom: .2em solid rgba(0,0,0,.2);
+      padding: 0;
+      white-space: nowrap;
+
+      img {
+        vertical-align: top;
+      }
+    }
+
+    .t-cursor {
+      text-align: center;
+      padding: 10px 0 0;
+      height: 1em;
+
+      img {
+        height: 0.5em;
+        vertical-align: top;
+      }
+    }
+
+    .t-controls {
+      padding: 0 10%;
+      color: $tomatoOrange;
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+
+      button {
+        background: orange;
+        border-radius: 20vw;
+        width: 15vw;
+        height: 15vw;
+        border: none;
+        color: white;
+        font-size: 5vw;
+
+        &.start-btn {
+          background-image: url(../img/done-flag.svg);
+          background-size: 60% !important;
+          background-position: center;
+        }
+      }
+
+      .time-left {
+        flex: 1;
+        text-align: right;
+      }
+    }
+  }
+}
